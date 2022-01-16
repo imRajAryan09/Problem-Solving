@@ -45,6 +45,7 @@ public:
                 curr=curr->next;
             }
             prev->next=curr->next;
+            // returning the head
             return head;
         }
     }
