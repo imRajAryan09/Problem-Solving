@@ -19,6 +19,7 @@ class Solution:
                 nums[j] = nums[i]
                 j += 1
 
+        // j is number of unique elements
         nums[j] = nums[n-1]
         j += 1
         return j
