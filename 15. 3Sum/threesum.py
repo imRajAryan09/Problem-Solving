@@ -1,6 +1,6 @@
 # 15. 3Sum [https://leetcode.com/problems/3sum/]
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums):
         # Sort the given array
         nums.sort()
         # length of the array
@@ -13,16 +13,20 @@ class Solution:
             if i > 0 and nums[i] == nums[i-1]:
                 continue
             # left and right pointers
-            j, k = i+1, n-1
+            left, right = i+1, n-1
             # loop for remaining pairs
-            while j < k:
-                if nums[i] + nums[j] + nums[k] == 0:
-                    triplets.append([nums[i], nums[j], nums[k]])
-                    j += 1
-                    while j < k and nums[j] == nums[j - 1]:
-                        j += 1
-                elif nums[i] + nums[j] + nums[k] < 0:
-                    j += 1
+            while left < right:
+                if nums[i] + nums[left] + nums[right] == 0:
+                    triplets.append([nums[i], nums[left], nums[right]])
+                    left += 1
+                    while left < right and nums[left] == nums[left - 1]:
+                        left += 1
+                elif nums[i] + nums[left] + nums[right] < 0:
+                    left += 1
                 else:
-                    k -= 1
+                    right -= 1
         return triplets
+
+
+sol = Solution()
+print(sol.threeSum([-1, 0, 1, 2, -1, -4]))
