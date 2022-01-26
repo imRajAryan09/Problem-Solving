@@ -10,6 +10,7 @@ class ListNode:
 
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+        # dummy list to store 
         dummy = ListNode(0)
         curr = dummy
         pq = PriorityQueue()
