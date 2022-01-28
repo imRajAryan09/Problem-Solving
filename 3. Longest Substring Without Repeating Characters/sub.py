@@ -2,8 +2,6 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str)->int:
         if len(s)==0:
             return 0
-        
-        size=len(s)
         word=list()
         unique_character=list()
         res=''
@@ -30,8 +28,3 @@ class Solution:
         
         longest= len(max(word,key=len))
         return longest
-        
-
-sol=Solution()
-print(sol.lengthOfLongestSubstring('aab'))
-                
