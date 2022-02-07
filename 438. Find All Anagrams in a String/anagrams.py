@@ -27,7 +27,3 @@ class Solution:
             if sCount==pCount:
                 res.append(l)
         return res
-
-
-sol = Solution()
-print(sol.findAnagrams(s="cbaebabacd", p="abc"))
