@@ -14,7 +14,3 @@ class Solution:
                 
         return count
     
-sol=Solution()
-print(sol.removeElement([3,2,2,3],3))
-            
-        
