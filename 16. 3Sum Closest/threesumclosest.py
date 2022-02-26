@@ -21,7 +21,3 @@ class Solution:
                 if abs(closest - target) > abs(current_sum - target):
                     closest = current_sum
         return closest
-
-
-sol = Solution()
-print(sol.threeSum([-1, 0, 1, 2, -1, -4]))
