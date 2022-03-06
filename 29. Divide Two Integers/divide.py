@@ -12,5 +12,6 @@ class Solution:
                 k += 1
             dividend -= (divisor << k)
             res += 1 << k
+        # max value 
         MAX_INT = (1 << 31)-1
         return -res if sign else (res if res <= MAX_INT else MAX_INT)
