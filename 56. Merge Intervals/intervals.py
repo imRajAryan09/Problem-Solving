@@ -12,5 +12,3 @@ class Solution:
             i+=1
         return intervals
 
-sol=Solution()
-print(sol.merge([[1, 4], [0, 2], [3, 5]]))
