@@ -13,5 +13,3 @@ class Solution:
         return digi_incre
             
         
-sol=Solution()
-print(sol.plusOne([9]))
