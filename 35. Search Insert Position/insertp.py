@@ -24,6 +24,3 @@ class Solution:
     
         # If we reach here, then the element was not present
         return low
-    
-sol=Solution()
-print(sol.searchInsert([1],0))
