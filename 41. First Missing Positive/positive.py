@@ -26,5 +26,3 @@ class Solution:
         return n+1
 
 
-sol = Solution()
-print(sol.firstMissingPositive(nums=[1, 2, 0]))
