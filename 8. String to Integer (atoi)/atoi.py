@@ -38,7 +38,3 @@ class Solution:
         if number > INT_MAX:
             return INT_MAX
         return number
-
-
-sol = Solution()
-print(sol.myAtoi("42"))
